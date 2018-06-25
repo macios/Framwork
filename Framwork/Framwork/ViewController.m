@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UserVC.h"
-//#import "<#header#>"
+#import "MVVMVC.h"
 
 @interface ViewController ()
 
@@ -26,6 +26,7 @@
 - (IBAction)MVCClick:(id)sender {
 }
 - (IBAction)MVVMClick:(id)sender {
+    [self.navigationController pushViewController:[MVVMVC new] animated:YES];
 }
 
 
