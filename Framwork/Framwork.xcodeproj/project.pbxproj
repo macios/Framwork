@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5634CC8820E09790007F0BA9 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634CC8720E09790007F0BA9 /* Presenter.m */; };
+		5634CC8B20E097FD007F0BA9 /* UserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634CC8A20E097FD007F0BA9 /* UserView.m */; };
+		5634CC8E20E098D0007F0BA9 /* NetUserViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634CC8D20E098D0007F0BA9 /* NetUserViewData.m */; };
+		5634CC9120E09B89007F0BA9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634CC9020E09B89007F0BA9 /* UserModel.m */; };
+		5634CC9520E09C78007F0BA9 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634CC9320E09C78007F0BA9 /* UserVC.m */; };
+		5634CC9620E09C78007F0BA9 /* UserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5634CC9420E09C78007F0BA9 /* UserVC.xib */; };
 		56D416EA20E0929600452A8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D416E920E0929600452A8C /* AppDelegate.m */; };
 		56D416ED20E0929600452A8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D416EC20E0929600452A8C /* ViewController.m */; };
 		56D416F020E0929600452A8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D416EE20E0929600452A8C /* Main.storyboard */; };
@@ -35,6 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5634CC8620E09790007F0BA9 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		5634CC8720E09790007F0BA9 /* Presenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		5634CC8920E097FD007F0BA9 /* UserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserView.h; sourceTree = "<group>"; };
+		5634CC8A20E097FD007F0BA9 /* UserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserView.m; sourceTree = "<group>"; };
+		5634CC8C20E098D0007F0BA9 /* NetUserViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetUserViewData.h; sourceTree = "<group>"; };
+		5634CC8D20E098D0007F0BA9 /* NetUserViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetUserViewData.m; sourceTree = "<group>"; };
+		5634CC8F20E09B89007F0BA9 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		5634CC9020E09B89007F0BA9 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		5634CC9220E09C78007F0BA9 /* UserVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserVC.h; sourceTree = "<group>"; };
+		5634CC9320E09C78007F0BA9 /* UserVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserVC.m; sourceTree = "<group>"; };
+		5634CC9420E09C78007F0BA9 /* UserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserVC.xib; sourceTree = "<group>"; };
 		56D416E520E0929600452A8C /* Framwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D416E820E0929600452A8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56D416E920E0929600452A8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +95,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5634CC8020E0962A007F0BA9 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC8520E0975B007F0BA9 /* NetWork */,
+				5634CC8120E09639007F0BA9 /* Model */,
+				5634CC8320E0965C007F0BA9 /* View */,
+				5634CC8420E09662007F0BA9 /* Presenter */,
+				5634CC8220E0964A007F0BA9 /* VC */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		5634CC8120E09639007F0BA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC8F20E09B89007F0BA9 /* UserModel.h */,
+				5634CC9020E09B89007F0BA9 /* UserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5634CC8220E0964A007F0BA9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC9220E09C78007F0BA9 /* UserVC.h */,
+				5634CC9320E09C78007F0BA9 /* UserVC.m */,
+				5634CC9420E09C78007F0BA9 /* UserVC.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		5634CC8320E0965C007F0BA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC8920E097FD007F0BA9 /* UserView.h */,
+				5634CC8A20E097FD007F0BA9 /* UserView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5634CC8420E09662007F0BA9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC8620E09790007F0BA9 /* Presenter.h */,
+				5634CC8720E09790007F0BA9 /* Presenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5634CC8520E0975B007F0BA9 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				5634CC8C20E098D0007F0BA9 /* NetUserViewData.h */,
+				5634CC8D20E098D0007F0BA9 /* NetUserViewData.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		5634CC9720E0A513007F0BA9 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
 		56D416DC20E0929600452A8C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +183,8 @@
 		56D416E720E0929600452A8C /* Framwork */ = {
 			isa = PBXGroup;
 			children = (
+				5634CC9720E0A513007F0BA9 /* MVC */,
+				5634CC8020E0962A007F0BA9 /* MVP */,
 				56D416E820E0929600452A8C /* AppDelegate.h */,
 				56D416E920E0929600452A8C /* AppDelegate.m */,
 				56D416EB20E0929600452A8C /* ViewController.h */,
@@ -238,6 +322,7 @@
 				56D416F520E0929900452A8C /* LaunchScreen.storyboard in Resources */,
 				56D416F220E0929900452A8C /* Assets.xcassets in Resources */,
 				56D416F020E0929600452A8C /* Main.storyboard in Resources */,
+				5634CC9620E09C78007F0BA9 /* UserVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +349,12 @@
 			files = (
 				56D416ED20E0929600452A8C /* ViewController.m in Sources */,
 				56D416F820E0929900452A8C /* main.m in Sources */,
+				5634CC9120E09B89007F0BA9 /* UserModel.m in Sources */,
+				5634CC9520E09C78007F0BA9 /* UserVC.m in Sources */,
+				5634CC8820E09790007F0BA9 /* Presenter.m in Sources */,
+				5634CC8B20E097FD007F0BA9 /* UserView.m in Sources */,
 				56D416EA20E0929600452A8C /* AppDelegate.m in Sources */,
+				5634CC8E20E098D0007F0BA9 /* NetUserViewData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
