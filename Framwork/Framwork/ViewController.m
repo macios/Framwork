@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UserVC.h"
+//#import "<#header#>"
 
 @interface ViewController ()
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)MVPClick:(id)sender {
+    [self.navigationController pushViewController:[UserVC new] animated:YES];
+}
+- (IBAction)MVCClick:(id)sender {
+}
+- (IBAction)MVVMClick:(id)sender {
 }
 
 
